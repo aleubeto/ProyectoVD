@@ -14,7 +14,9 @@ import NavBar from './components/navbarItem.vue'
       <template #heading>Spark Horizon</template>
     </NavBar>
   </header>
-  <RouterView/>
+  <div class="container">
+    <RouterView/>
+  </div>
 </template>
 
 <!--Scripts-->
