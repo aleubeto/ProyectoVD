@@ -1,5 +1,5 @@
 <template>
-    <div class="card mb-4">
+    <div class="card mb-5">
         <slot name="image"></slot>
         <div class="card-body">
             <h5 class="card-title"><slot name="cardTitle"></slot></h5>
@@ -10,6 +10,6 @@
 
 <style>
 .card{
-    width: 14rem;
+    width: 18rem;
 }
 </style>

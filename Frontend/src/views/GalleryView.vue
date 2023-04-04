@@ -1,12 +1,14 @@
 <!--Template de vista-->
 <template>
     <main>
-        <h2 class="mb-5">Our team</h2>
-        <Card v-for="(item, index) in data" v-bind:key="index">
-            <template #image><img :src="item.portada" class="card-img-top" alt="..."></template>
-            <template #cardTitle>{{item.titulo}}</template>
-            <template #cardText>{{item.puesto}}</template>
-        </Card>
+        <h2 class="mt-4 mb-4">Our team</h2>
+        <div class="cards">
+            <Card v-for="(item, index) in data" v-bind:key="index">
+                <template #image><img :src="item.portada" class="card-img-top" alt="..."></template>
+                <template #cardTitle>{{item.titulo}}</template>
+                <template #cardText>{{item.puesto}}</template>
+            </Card>
+        </div>
     </main>
 </template>
 
@@ -18,20 +20,36 @@
     // Scripts
     import {ref} from 'vue'
     const data = ref([{
-        titulo: "Título",
-        puesto: "a",
+        titulo: "Fer", puesto: "SCRUM master",
         portada: "/src/assets/img/team-1.jpg"
     },
     {
-        titulo: "Título",
-        puesto: "a",
+        titulo: "Ale", puesto: "Configuration manager",
         portada: "/src/assets/img/team-2.jpg"
     },
     {
-        titulo: "Título",
-        puesto: "a",
+        titulo: "Omar", puesto: "Backend developer",
+        portada: "/src/assets/img/team-3.jpg"
+    },
+    {
+        titulo: "Oscar", puesto: "Frontend developer",
+        portada: "/src/assets/img/team-3.jpg"
+    },
+    {
+        titulo: "Alan", puesto: "Software developer",
+        portada: "/src/assets/img/team-3.jpg"
+    },
+    {
+        titulo: "Rocha", puesto: "Software developer",
         portada: "/src/assets/img/team-3.jpg"
     }
     ])
 </script>
 
+<style>
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+</style>
