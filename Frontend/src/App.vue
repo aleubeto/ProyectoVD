@@ -1,8 +1,12 @@
 <script setup>
+// Icons
 import WhiteIsotype from './components/icons/Isotipo/Icon_Isotipo-white.vue'
+
+// Components
 import NavBar from './components/navbarItem.vue'
 </script>
 
+<!--Estructura de la aplicación-->
 <template>
   <header>
     <NavBar :navItems="navItems">
@@ -13,6 +17,7 @@ import NavBar from './components/navbarItem.vue'
   <RouterView/>
 </template>
 
+<!--Scripts-->
 <script>
   export default {
     components: {
