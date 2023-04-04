@@ -1,33 +1,37 @@
+<!--Template de vista-->
+<template>
+    <main>
+        <h2 class="mb-5">Our team</h2>
+        <Card v-for="(item, index) in data" v-bind:key="index">
+            <template #image><img :src="item.portada" class="card-img-top" alt="..."></template>
+            <template #cardTitle>{{item.titulo}}</template>
+            <template #cardText>{{item.puesto}}</template>
+        </Card>
+    </main>
+</template>
+
+<!--Script de vista-->
 <script setup>
+    // Componentes
+    import Card from '/src/components/cards/card-01.vue'
+
+    // Scripts
     import {ref} from 'vue'
     const data = ref([{
         titulo: "Título",
-        autor: "Semana 1",
+        puesto: "a",
         portada: "/src/assets/img/team-1.jpg"
     },
     {
         titulo: "Título",
-        autor: "Semana 3",
+        puesto: "a",
         portada: "/src/assets/img/team-2.jpg"
     },
     {
         titulo: "Título",
-        autor: "Semana 5",
+        puesto: "a",
         portada: "/src/assets/img/team-3.jpg"
     }
     ])
 </script>
 
-<template>
-    <main>
-        <h2>Galería</h2>
-        <div v-for = "(item,i) in data" v-bind:key="i" class="card" style="width: 18rem;">
-        <img :src="item.portada" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">{{item.titulo}}</h5>
-                <p class="card-text">Autor: {{item.autor}}</p>
-                <a href="#" class="btn btn-primary">Check this out</a>
-            </div>
-        </div>
-    </main>
-</template>
