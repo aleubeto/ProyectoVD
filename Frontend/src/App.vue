@@ -1,24 +1,38 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
+// Icons
+import WhiteIsotype from './components/icons/Isotipo/Icon_Isotipo-white.vue'
+
+// Components
+import NavBar from './components/navbarItem.vue'
 </script>
 
+<!--Estructura de la aplicación-->
 <template>
   <header>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <RouterLink to = "/" class="nav-link">About Us</RouterLink>
-            <RouterLink to = "/gallery" class="nav-link">Gallery</RouterLink>
-            <RouterLink to = "/joinus" class="nav-link">Join Us</RouterLink>
-          </div>
-        </div>
-      </div>
-    </nav>
+    <NavBar :navItems="navItems">
+      <template #icon><WhiteIsotype/></template>
+      <template #heading>Spark Horizon</template>
+    </NavBar>
   </header>
-  <RouterView/>
+  <div class="container">
+    <RouterView/>
+  </div>
 </template>
+
+<!--Scripts-->
+<script>
+  export default {
+    components: {
+      NavBar
+    },
+    data() {
+      return {
+        navItems: [
+          { text: 'About Us', route: '/' },
+          { text: 'Our team', route: '/ourteam' },
+          { text: 'Join Us', route: '/joinus' }
+        ]
+      }
+    }
+  }
+</script>

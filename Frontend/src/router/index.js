@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import AboutUs from '../views/AboutUsView.vue'
-import Gallery from '../views/GalleryView.vue'
+import OurTeam from '../views/GalleryView.vue'
 import JoinUs from '../views/JoinUsView.vue'
 
 const router = createRouter({
@@ -12,9 +12,9 @@ const router = createRouter({
       component: AboutUs
     },
     {
-      path: '/gallery',
-      name: 'Gallery',
-      component: Gallery
+      path: '/ourteam',
+      name: 'Our team',
+      component: OurTeam
     },
     {
       path: '/joinus',

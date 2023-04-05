@@ -1,33 +1,55 @@
+<!--Template de vista-->
+<template>
+    <main>
+        <h2 class="mt-4 mb-4">Our team</h2>
+        <div class="cards">
+            <Card v-for="(item, index) in data" v-bind:key="index">
+                <template #image><img :src="item.portada" class="card-img-top" alt="..."></template>
+                <template #cardTitle>{{item.titulo}}</template>
+                <template #cardText>{{item.puesto}}</template>
+            </Card>
+        </div>
+    </main>
+</template>
+
+<!--Script de vista-->
 <script setup>
+    // Componentes
+    import Card from '/src/components/cards/card-01.vue'
+
+    // Scripts
     import {ref} from 'vue'
     const data = ref([{
-        titulo: "Título",
-        autor: "Semana 1",
-        portada: "/src/assets/img/team-1.jpg"
+        titulo: "Fer", puesto: "SCRUM master",
+        portada: "/src/assets/img/fer.png"
     },
     {
-        titulo: "Título",
-        autor: "Semana 3",
-        portada: "/src/assets/img/team-2.jpg"
+        titulo: "Ale", puesto: "Configuration manager",
+        portada: "/src/assets/img/ale.jpg"
     },
     {
-        titulo: "Título",
-        autor: "Semana 5",
+        titulo: "Omar", puesto: "Backend developer",
         portada: "/src/assets/img/team-3.jpg"
+    },
+    {
+        titulo: "Oscar", puesto: "Frontend developer",
+        portada: "/src/assets/img/oscar.jpg"
+    },
+    {
+        titulo: "Alan", puesto: "Software developer",
+        portada: "/src/assets/img/team-3.jpg"
+    },
+    {
+        titulo: "Rocha", puesto: "Software developer",
+        portada: "/src/assets/img/rocha.png"
     }
     ])
 </script>
 
-<template>
-    <main>
-        <h2>Galería</h2>
-        <div v-for = "(item,i) in data" v-bind:key="i" class="card" style="width: 18rem;">
-        <img :src="item.portada" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">{{item.titulo}}</h5>
-                <p class="card-text">Autor: {{item.autor}}</p>
-                <a href="#" class="btn btn-primary">Check this out</a>
-            </div>
-        </div>
-    </main>
-</template>
+<style>
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+</style>
