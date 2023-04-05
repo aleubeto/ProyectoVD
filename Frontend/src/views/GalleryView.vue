@@ -21,11 +21,11 @@
     import {ref} from 'vue'
     const data = ref([{
         titulo: "Fer", puesto: "SCRUM master",
-        portada: "/src/assets/img/team-1.jpg"
+        portada: "/src/assets/img/fer.png"
     },
     {
         titulo: "Ale", puesto: "Configuration manager",
-        portada: "/src/assets/img/team-2.jpg"
+        portada: "/src/assets/img/ale.jpg"
     },
     {
         titulo: "Omar", puesto: "Backend developer",
@@ -33,7 +33,7 @@
     },
     {
         titulo: "Oscar", puesto: "Frontend developer",
-        portada: "/src/assets/img/team-3.jpg"
+        portada: "/src/assets/img/oscar.jpg"
     },
     {
         titulo: "Alan", puesto: "Software developer",
@@ -41,7 +41,7 @@
     },
     {
         titulo: "Rocha", puesto: "Software developer",
-        portada: "/src/assets/img/team-3.jpg"
+        portada: "/src/assets/img/rocha.png"
     }
     ])
 </script>
