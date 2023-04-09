@@ -1,8 +1,6 @@
 # Spark Horizon - Sitio oficial
 
-Este proyecto consiste en una página informativa desarrollada por el equipo de "Spark Horizon", una startup que se dedica al desarrollo de software.
-
-La página está desarrollada utilizando Vue.js, un popular framework de JavaScript para construir interfaces de usuario.
+Este proyecto consiste en una página informativa desarrollada por el equipo de "Spark Horizon", una startup que se dedica al desarrollo de software. La página está desarrollada utilizando Vue.js, un popular framework de JavaScript para construir interfaces de usuario y el framework de desarrollo web responsivo, Bootstrap.
 
 ## Funcionalidades
 
