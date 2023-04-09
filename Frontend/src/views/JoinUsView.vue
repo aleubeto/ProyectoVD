@@ -1,6 +1,8 @@
+<!--HTML de la vista-->
 <template>
     <main>
         <div class="row flex-column flex-md-row justify-content-between mt-5" id="joinus">
+            <!--Info-->
             <div class="col-md-5 mb-4 mb-md-0">
                 <h2 class="mb-4">Join Us</h2>
                 <p>Thank you for visiting Spark Horizon's informative webpage!
@@ -10,6 +12,7 @@
                     We look forward to your registration!
                 </p>
             </div>
+            <!--Formulario-->
             <div class="col-md-6">
                 <form>
                     <!--Nombre-->
@@ -60,6 +63,7 @@
     }
 </script>
 
+<!--Estilos de vista-->
 <style>
 form{
     background-color: #d6d6d6;
