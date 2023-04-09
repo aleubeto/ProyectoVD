@@ -4,13 +4,13 @@
         <form>
             <!--Nombre-->
             <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label">Your name</label>
-                <input v-model="mensaje" type="text" class="form-control" id="exampleInputTest">
+                <label for="userName" class="form-label">Your name</label>
+                <input type="text" class="form-control" id="userName">
             </div>
             <!--Email-->
             <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Email</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <label for="userEmail" class="form-label">Email</label>
+                <input type="email" class="form-control" id="userEmail" aria-describedby="emailHelp">
             </div>
             <!--Terms & conditions-->
             <div class="mb-3">
