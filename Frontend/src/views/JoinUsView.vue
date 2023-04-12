@@ -1,7 +1,7 @@
 <!--HTML de la vista-->
 <template>
     <main>
-        <div class="row flex-column flex-md-row justify-content-between mt-5" id="joinus">
+        <div class="row flex-column flex-md-row justify-content-between" id="joinus">
             <!--Info-->
             <div class="col-md-5 mb-4 mb-md-0">
                 <h2 class="mb-4">Join Us</h2>
@@ -69,5 +69,9 @@ form{
     background-color: #d6d6d6;
     padding: 15px;
     border-radius: 10px;
+}
+#joinus{
+    align-items: center;
+    height: 90vh;
 }
 </style>
