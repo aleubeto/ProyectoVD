@@ -28,7 +28,7 @@ import NavBar from './components/navbarItem.vue'
     data() {
       return {
         navItems: [
-          { text: 'About Us', route: '/' },
+          { text: 'Blog', route: '/' },
           { text: 'Our team', route: '/ourteam' },
           { text: 'Join Us', route: '/joinus' }
         ]
