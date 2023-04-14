@@ -36,3 +36,9 @@ import NavBar from './components/navbarItem.vue'
     }
   }
 </script>
+
+<style>
+main{
+  width: 100%;
+}
+</style>
