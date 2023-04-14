@@ -21,6 +21,8 @@
     border-radius: 5px 5px 0px 0px;
 }
 .card .cardImageContainer img{
+    object-fit: cover;
+    height: 100%;
     transition: all 0.5s ease-out
 }
 .cardImageContainer img:hover{
