@@ -9,6 +9,48 @@
                 <template #cardText>{{item.puesto}}</template>
             </Card>
         </div>
+        <h2 class="mt-5 mb-4">Spark Horizon team</h2>
+        <table class="table table-striped">
+        <thead>
+            <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">A01735334</th>
+                <td>María Fernanda Ramírez Romero</td>
+                <td>A01735334@tec.mx</td>
+            </tr>
+            <tr>
+                <th scope="row">A01730560</th>
+                <td>Francisco Rocha Juárez</td>
+                <td>A01730560@tec.mx</td>
+            </tr>
+            <tr>
+                <th scope="row">A01732097</th>
+                <td>Alan Eduardo Dávila Arellano</td>
+                <td>A01732097@tec.mx</td>
+            </tr>
+            <tr>
+                <th scope="row">A01660338</th>
+                <td>Óscar Emiliano Ramírez Díaz</td>
+                <td>A01660338@tec.mx</td>
+            </tr>
+            <tr>
+                <th scope="row">A01730560</th>
+                <td>Francisco Rocha Juárez</td>
+                <td>A01730560@tec.mx</td>
+            </tr>
+            <tr>
+                <th scope="row">A01734977</th>
+                <td>Alejandro Alfonso Ubeto Yañez</td>
+                <td>A01734977@tec.mx</td>
+            </tr>
+        </tbody>
+        </table>
     </main>
 </template>
 
