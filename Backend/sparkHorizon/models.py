@@ -7,8 +7,9 @@ class TeamMember(models.Model):
     nombre = models.CharField(max_length=100)
     apellido = models.CharField(max_length=150)
     correo = models.EmailField()
+    imagen = models.FileField(upload_to='sparkHorizon/imagen/')
     def __str__(self):
-        return self.correo, '|', self.nombre, self.apellido
+        return self.nombre + ' ' + self.apellido
 
 class Gender(models.Model):
     nombre = models.CharField(max_length=100)
