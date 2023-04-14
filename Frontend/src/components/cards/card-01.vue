@@ -6,6 +6,7 @@
         <div class="card-body">
             <h5 class="card-title"><slot name="cardTitle"></slot></h5>
             <p class="card-text"><slot name="cardText"></slot></p>
+            <slot></slot>
         </div>
     </div>
 </template>
@@ -17,5 +18,12 @@
 .cardImageContainer{
     height: 200px;
     overflow: hidden;
+    border-radius: 5px 5px 0px 0px;
+}
+.card .cardImageContainer img{
+    transition: all 0.5s ease-out
+}
+.cardImageContainer img:hover{
+    scale: 1.1;
 }
 </style>
