@@ -40,4 +40,4 @@ class Calificacion(models.Model):
     calificacion = models.IntegerField()
     comentario = models.TextField()
     def __str__(self):
-        return str(self.calificacion, '|', self.calificacion)
+        return self.usuario.correo + ' | ' + self.post.titulo
