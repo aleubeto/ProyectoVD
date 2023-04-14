@@ -1,7 +1,7 @@
 <!--Template de vista-->
 <template>
     <main>
-        <h2 class="mt-4 mb-4">Our team</h2>
+        <h2 class="mt-5 mb-4">Our team</h2>
         <div class="cards">
             <Card v-for="(item, index) in data" v-bind:key="index">
                 <template #image><img :src="item.portada" class="card-img-top" alt="..."></template>
