@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'sparkHorizon.apps.SparkhorizonConfig'
+    'rest_framework'
 ]
 
 MIDDLEWARE = [
