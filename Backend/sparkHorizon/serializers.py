@@ -3,25 +3,25 @@ from .models import Post,Gender,Usuario,TeamMember,Calificacion
 
 class PostSerializer(ModelSerializer):
     class Meta:
-        model: Post
-        fields: ALL_FIELDS
+        model = Post
+        fields = ALL_FIELDS
 
 class GenderSerializer(ModelSerializer):
     class Meta:
-        model: Gender
-        fields: ALL_FIELDS
+        model = Gender
+        fields = ALL_FIELDS
 
 class UsuarioSerializer(ModelSerializer):
     class Meta:
-        model: Usuario
-        fields: ALL_FIELDS
+        model = Usuario
+        fields = ALL_FIELDS
 
 class TeamSerializer(ModelSerializer):
     class Meta:
-        model: TeamMember
-        fields: ALL_FIELDS
+        model = TeamMember
+        fields = ALL_FIELDS
 
 class CalificacionSerializer(ModelSerializer):
     class Meta:
-        model: Calificacion
-        fields: ALL_FIELDS
+        model = Calificacion
+        fields = ALL_FIELDS
