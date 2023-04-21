@@ -1,5 +1,8 @@
 from django.http import HttpResponse
+from rest_framework.viewsets import ModelViewSet
+from .models import Post
+from .serializers import PostSerializer
 
-# Create your views here.
-def index(reques):
-    return HttpResponse("Spark Horizon! :D")
+class PostViewSet(ModelViewSet):
+    queryset = Post.objects.all()
+    serializer_class = PostSerializer
