@@ -1,24 +1,26 @@
 from django.http import HttpResponse
 from rest_framework.viewsets import ModelViewSet
-from .models import Post
+from .models import *
 from .serializers import *
+from rest_framework.views import APIView
+from rest_framework.response import Response
 
 class PostViewSet(ModelViewSet):
     queryset = Post.objects.all()
     serializer_class = PostSerializer
 
 class GenderViewSet(ModelViewSet):
-    queryset = Post.objects.all()
+    queryset = Gender.objects.all()
     serializer_class = GenderSerializer
 
 class UsuarioViewSet(ModelViewSet):
-    queryset = Post.objects.all()
+    queryset = Usuario.objects.all()
     serializer_class = UsuarioSerializer
 
 class TeamViewSet(ModelViewSet):
-    queryset = Post.objects.all()
+    queryset = TeamMember.objects.all()
     serializer_class = TeamSerializer
 
 class CalificacionViewSet(ModelViewSet):
-    queryset = Post.objects.all()
+    queryset = Calificacion.objects.all()
     serializer_class = CalificacionSerializer
