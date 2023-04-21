@@ -25,7 +25,7 @@ class Usuario(models.Model):
 class Post(models.Model):
     titulo = models.CharField(max_length=200)
     sinopsis = models.TextField()
-    portada = models.FileField(upload_to='sparkHorizon/portadas/')
+    portada = models.FileField()
     fecha_publicacion = models.DateField('fecha de publicación')
     num_pag = models.IntegerField('número de páginas', default=0)
     genero = models.ForeignKey(Gender, on_delete=models.CASCADE)
