@@ -6,6 +6,7 @@ class PostSerializer(ModelSerializer):
         model = Post
         fields = ALL_FIELDS
 
+
 class GenderSerializer(ModelSerializer):
     class Meta:
         model = Gender
@@ -24,4 +25,12 @@ class TeamSerializer(ModelSerializer):
 class CalificacionSerializer(ModelSerializer):
     class Meta:
         model = Calificacion
+        fields = ALL_FIELDS
+
+class PostGetSerializer(ModelSerializer):
+    genero = GenderSerializer()
+    autores = TeamSerializer(many=True)
+    calificaciones = CalificacionSerializer(many=True, required=False)
+    class Meta:
+        model = Post
         fields = ALL_FIELDS
